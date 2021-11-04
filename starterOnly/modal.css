@@ -527,3 +527,8 @@ footer {
   }
 }
 
+/* erreur  */
+
+.error {
+  display: none;
+}
