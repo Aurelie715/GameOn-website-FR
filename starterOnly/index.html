@@ -57,6 +57,7 @@
           <span class="close"></span>
           <div class="modal-body">
             <form
+              id="form"
               name="reserve"
               action="index.html"
               method="get"
@@ -72,7 +73,7 @@
                   name="first"
                   minlength="2"
                 />
-                <p class="error">Veuillez entrer 2 caractères ou plus pour le champ du nom.</p>
+                <p class="error"></p>
               </div>
               <div
                 class="formData">
@@ -83,7 +84,7 @@
                   id="last"
                   name="last"
                 />
-                <p class="error">Veuillez entrer 2 caractères ou plus pour le champ du nom.</p>
+                <p class="error"></p>
               </div>
               <div
                 class="formData">
@@ -94,7 +95,7 @@
                   id="email"
                   name="email"
                 />
-                <p class="error">Veuillez entrer une adresse email valide.</p>
+                <p class="error"></p>
               </div>
               <div
                 class="formData">
@@ -104,13 +105,14 @@
                   type="date"
                   id="birthdate"
                   name="birthdate"
-                /><br>
+                />
+                <p class="error"></p>
               </div>
               <div
                 class="formData">
                 <label for="quantity">À combien de tournois GameOn avez-vous déjà participé ?</label><br>
                 <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99">
-                <p class="error">Veuillez entrer un nombre entre 0 et 99.</p>
+                <p class="error"></p>
               </div>
               <p class="text-label">Quelles villes ?</p>
               <div
@@ -196,7 +198,7 @@
                   <span class="checkbox-icon"></span>
                   J'ai lu et accepté les conditions d'utilisation.
                 </label>
-                <p class="error" id="checkbox-error">Vous devez vérifier que vous acceptez les termes et conditions.</p>
+                <p class="error" id="checkbox-error"></p>
                 <input class="checkbox-input" type="checkbox" id="checkbox2" />
                 <label class="checkbox2-label" for="checkbox2">
                   <span class="checkbox-icon"></span>
