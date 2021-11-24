@@ -49,7 +49,7 @@ closeModalBtn.forEach((btn) => btn.addEventListener("click", closeModal));
 // close modal form
 function closeModal() {
   modalbg.style.display = "none";
-  // document.getElementById(form).reset();
+  document.getElementById("form").reset();
 }
 
 form.addEventListener("submit", function (event) {
@@ -116,18 +116,4 @@ form.addEventListener("submit", function (event) {
   }
   formSuccess.style.display = valid ? 'block' : 'none';
   form.style.display = valid ? 'none' : 'block';
-  
-  
-  
-  // else {
-  //   modalbg.innerHTML = "<p> Thank you for submitting your registration details</p>"
-  // }
-  
-
-//   const form = document.getElementById("form");
-// let formDatas = new FormData(form)
-
-// formDatas.forEach((value, key) => {
-//   console.log(key + " " + value);
-// })
 });
